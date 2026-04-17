@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background: url('gambar_1.jpg') no-repeat center center fixed;
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+  color: white;
+}
+
+/* 🔹 Tombol Home (rapi & konsisten) */
+.home-btn {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  padding: 12px 20px;
+  font-size: 18px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #45a049;
+}
+
+/* 🔹 HUD */
+#hud {
+  position: absolute;
+  top: 20px;
+  font-size: 20px;
+  display: flex;
+  gap: 40px;
+  background-color: rgb(70, 126, 191);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* 🔹 Canvas */
+canvas {
+  background: #bbcae1;
+  border: 3px solid #c6e5ee;
+  border-radius: 12px;
+}
+
+/* 🔹 Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.popup-buttons .home-btn {
+  position: static; /* 🔥 penting! hilangkan absolute */
+  padding: 10px 20px;
+  background: #2196F3;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Bubble - Level Sulit</title>
+  <link rel="stylesheet" href="sulit.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../Index/menu_utama.html" class="home-btn">🏠 Home</a>
+  </nav>
+
+  <div id="hud">
+    <div>Skor: <span id="score">0</span></div>
+    <div>Nyawa: <span id="lives">3</span></div>
+    <div>Waktu: <span id="timer">45</span></div>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+  <!-- 🔥 POPUP -->
+  <div id="gameOverPopup" class="popup">
+    <div class="popup-content">
+      
+      <img src="../Level_Mudah/gambar_surandi.jpeg" width="200">
+
+      <h2>Game Over</h2>
+      <p>Skor: <span id="finalScore"></span></p>
+
+        <div class="popup-buttons">
+          <button onclick="restartGame()">🔄 Coba Lagi</button>
+          <a href="../Index/menu_utama.html" class="home-btn">🏠 Home</a>
+        </div>
+    </div>
+  </div>
+
+  <script src="sulit.js"></script>
+
+</body>
+</html>

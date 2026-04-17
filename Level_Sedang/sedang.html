@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Bubble - Level Sedang</title>
+  <link rel="stylesheet" href="sedang.css">
+</head>
+<body>
+  <a href="../Index/menu_utama.html" id="btnHome">🏠 Home</a>
+  
+  <div id="hud">
+    <div>Skor: <span id="score">0</span></div>
+    <div>Nyawa: <span id="lives">3</span></div>
+    <div>Waktu: <span id="timer">60</span></div>
+  </div>`
+
+
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+  
+<div id="gameOverPopup" class="popup">
+  <div class="popup-content">
+    
+    <img src="../Level_Mudah/gambar_surandi.jpeg" width="200">
+
+    <h2>Game Over</h2>
+    <p>Skor: <span id="finalScore"></span></p>
+
+      <div class="popup-buttons">
+          <button onclick="restartGame()">🔄 Coba Lagi</button>
+          <a href="../Index/menu_utama.html" class="home-btn">🏠 Home</a>
+      </div>
+  </div>
+
+  <script src="sedang.js"></script>
+</body>
+</html>

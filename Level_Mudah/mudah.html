@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Bubble Quiz</title>
+  <link rel="stylesheet" href="mudah.css">
+</head>
+<body>
+  <a href="../Index/menu_utama.html" id="btnHome">🏠 Home</a>
+
+  <div id="hud">
+    <div>❤️ Nyawa: <span id="lives">3</span></div>
+    <div>⭐ Skor: <span id="score">0</span></div>
+    <div>⏳ Waktu: <span id="timer">60</span>s</div>
+  </div>
+  
+  <canvas id="game" width="700" height="450"></canvas>
+
+<div id="gameOverPopup" class="popup">
+  <div class="popup-content">
+    
+    <img src="gambar_surandi.jpeg" width="200">
+
+    <h2>Game Over</h2>
+    <p>Skor: <span id="finalScore"></span></p>
+
+    <button onclick="restartGame()">🔄 Coba Lagi</button>
+    <a href="../Index/menu_utama.html" class="home-btn">🏠 Home</a>
+  </div>
+</div>
+  <script src="mudah.js"></script>
+</body>
+</html>
